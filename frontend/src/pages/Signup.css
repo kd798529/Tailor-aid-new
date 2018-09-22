@@ -28,3 +28,8 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
+
+  .image {
+    background-image: url("../black-and-white-close-up-dark-821735.jpg");
+    background-size: cover;
+  }

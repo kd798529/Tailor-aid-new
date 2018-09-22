@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import Signup from './pages/Signup';
@@ -7,9 +7,13 @@ import Signup from './pages/Signup';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Signup />
-      </div>
+      <BrowserRouter>
+        <div>
+          <Route exact path='/' component={Home} />
+          <Route path='/signup' component={Signup} />
+        </div>
+      </BrowserRouter>
+      
     );
   }
 }
